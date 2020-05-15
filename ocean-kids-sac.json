@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kids-reward-system",
+  "private_key_id": "45cac132ba0bf2634138b00612b1a0bbfc20781e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCjXSUEYCcSe4TL\nabAEMfKCovYtF7OgSEe3Jh8bj/EopeylUpl1xa33oblQg5YsQ/w1xvP9NEybrYui\no5+h/VKmWkwgLipFOv/sfU2mrvWYqelVSPstPAG+ts3mhc6QMJj0cXKBJhlFQzUs\n+l8xQb0Z/i47540eBXG+434yMh2cE83s9IvC7kN3FDabbk28P1RxZsm+8Ia2agq9\nAtaE4KmJs8xa/8sJ68U4jTCOKegbh3DilJou5qfNZxMb56jU2LWyXwmq6yNHntJ9\nSKggsyWQkQehi9YTfaLKk3GEXGGbfaZgd5/+oC5k6uxvOQxTK2EyOJgSBJHCdaUS\nx3DEm7+LAgMBAAECggEAATN48gh08RVYZhh0/gA8rLTfA3jbo2TfUMY7z1DmcH/m\ndqwIoHg0ww/SKXiLh5rJBWoyNrKGPP9weeB4bCaiehegMf0KPC+8BvSVjWasO+ma\njhEhy5+CfHD39ZHBRt0cmsYkwIn+VecxwmQQLsVcIGShLrk77TRpYC0TAJ0kC5bf\nU8xlOFC271OqwUUJLABqoPdRSZD6Ax8ARIhlF/syA/re+Mz9SAeXN2C4wdyzQ3ve\n7+/FY9Ef3rhpclndv1Z1JD5LfK9wwPHHCLB2uhz30GfbMqiCXE7Jep2yQ6ZFMQ9e\nRaXisyMMLfy3Ai39AkoPIN5by36KQMlmgJeU7TrNMQKBgQDkHqaIA/l7Hg/FBi7a\nt3648cA5+OQ6/heo4Nk/TOC0zFZVA9kgbmSOAc0u7h8qvRR4y5nc0HnFsJ+rTYZh\nzJrCNCcNNfvVSUnn/1n343Jb9mUU8E/1hHaMOU0CoH2njbWd04NFDJNm2r0BO52u\nrTiA3Wpv4dCShJ8CvEJDv9m8cQKBgQC3VG3iEsKHrwjT6Gtmx1b8WM4vq1ezAbko\n/hRcIflnrIMgNDGxD8ZPZ6m1VqfwXWdSg4U8kcbttNkG4W3jTek4GgNaa2jqyhH7\nsDr5m14MQmp/kZmNxcMbIpUKjjkiA5D0njoJd4qebwzkQxrd/N6NqdIkuXSvSKYL\nGO7Oi/EpuwKBgF6X9yZfv4w2IwPoVHWNsZavaK6hbsKnqtf0pSGCl4thUEtglSDF\nphzc0mCrjXEDhwGwK9VM/bHkU9GNDDRxy5rMVYU85XjEM0losb4BKuLHgZL1M7Lz\ngtUSzcRRGMnqEW2oz75KQLVd7xIbzn8ohU2qgwBx+zNGm0lfF3tQitGBAoGBAJBp\nwJlKX9SUK+cJebkfo8Tqi5j/ZvkKjXneE9mzpYxmV3CBzPcGTxfzt7qyBV6RpTdZ\nhRX+W26afC8wWuioUeOwkh2i6KWzAdF6tCo1mjMcClptLkGAnD1+01raR+UkXAZl\nsaANe7NsFQKmXb6qWAHN2Uy2jlUZbDrnrA4mLJXLAoGBANVsJ0GTSPASj8OG60HA\nIPyLTrZ1j2n4gLCaOmu4HsssLBokC2f8nswRddsKIIZ0VBWbMAgi1w+IxACml2tm\nXB6UXTTbxt83iC4YQweVXhqZb2oHNpk5h7OTFimOEP+xxU2WNlNv3/SFYeoeHxZH\nSWwmd0Vf5nnzwbu0sokFlYPd\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-lcxtn@kids-reward-system.iam.gserviceaccount.com",
+  "client_id": "103654915698294347333",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-lcxtn%40kids-reward-system.iam.gserviceaccount.com"
+}
