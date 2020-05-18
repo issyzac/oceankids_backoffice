@@ -15,6 +15,11 @@ firebase = pyrebase.initialize_app(config)
 db = firebase.database()
 
 
+def child_by_id(token_id, firebase_id):
+    child = db.child("kids").child("kids_list").child(firebase_id).get(token_id).val()
+    return child
+
+
 def all_kids_list(token_id):
     all_kids = db.child('kids').child("kids_list").get(token_id).val()
     return all_kids
