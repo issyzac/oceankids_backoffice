@@ -46,7 +46,7 @@
                     <td>{{ child.date_of_birth }}</td>
                     <td> - </td>
                     <td> - </td>
-                    <td> <button type="button" class="mb-2 btn btn-info mr-2">More Details</button> </td>
+                    <td> <button type="button" class="mb-2 btn btn-info mr-2"> <a href="/kid-details/{{ child.firebase_id }}/" >More Details </a></button> </td>
                   </tr>
                 {% endfor %}
                 </tbody>
@@ -56,8 +56,6 @@
         </div>
       </div>
       <!-- End Default Light Table -->
-
-
 </div>
 
 {% endblock content %}
