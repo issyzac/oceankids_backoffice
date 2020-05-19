@@ -15,13 +15,32 @@ from .objects.child import Child
 from .objects.parent import Parent
 from typing import List
 from datetime import datetime, timezone
-from .firebase_helper import all_kids_list, all_parents_list
+from .firebase_helper import all_kids_list, all_parents_list, child_by_id
 
 db = firebase.database()
+
 
 # @login_required(login_url="/login/") => This enforces that the user is logged in
 def index(request):
     return render(request, "index.html")
+
+
+def kid_details(request, child_id):
+    tokenId = request.session.get('uid')
+    child = child_by_id(tokenId, child_id)
+    f_name = child.setdefault("firstName", "n/a")
+    l_name = child.setdefault("lastName", "n/a")
+
+    print(child.setdefault("firstName", "n/a"))
+
+    context = {
+        "child": {
+            "name": f_name+" "+l_name,
+            "class": "Primary",
+            "child_id": child_id
+        }
+    }
+    return render(request, "kid-details.html", context)
 
 # @login_required(login_url="/login/") => Enforces that the user should be logged in to view all the rest of the pages
 def pages(request):
@@ -52,7 +71,8 @@ def pages(request):
                     gender = val.setdefault('gender', "n/a")
                     dob = datetime.fromtimestamp((val.setdefault('dob', 1281082010992) / 1000), timezone.utc)
                     dob_formated = dob.strftime('%d-%b-%Y')
-                    new_child = Child(first_name, last_name, gender, str(dob_formated))
+                    child_firebase_id = val.setdefault('id', 'n/a')
+                    new_child = Child(first_name, last_name, gender, str(dob_formated), child_firebase_id)
                     children.append(new_child)
                 context = {
                     "kids_list": children,
@@ -73,6 +93,12 @@ def pages(request):
                     parents_list.append(current_parent)
                 context = {
                     "all_parents": parents_list,
+                }
+            elif str(load_template) == 'kid-details.html':
+                kid_id = request.GET["kid_uid"]
+                kid = "Jamal Makamba"
+                context = {
+                    "kid": kid,
                 }
             else:
                 context = {
