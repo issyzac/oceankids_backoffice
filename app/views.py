@@ -30,6 +30,10 @@ def kid_details(request, child_id):
     child = child_by_id(tokenId, child_id)
     f_name = child.setdefault("firstName", "n/a")
     l_name = child.setdefault("lastName", "n/a")
+    gender = child.setdefault("gender", "n/a")
+    dateOfBirth = datetime.fromtimestamp((child.setdefault('dob', 1281082010992) / 1000), timezone.utc)
+    dob_formated = dateOfBirth.strftime('%d-%b-%Y')
+    allergies = child.setdefault("allergies", "n/a")
 
     print(child.setdefault("firstName", "n/a"))
 
@@ -37,7 +41,14 @@ def kid_details(request, child_id):
         "child": {
             "name": f_name+" "+l_name,
             "class": "Primary",
+            "gender": gender,
+            "dateOfBirth": dob_formated,
+            "allergies": allergies,
             "child_id": child_id
+        },
+        "parent": {
+            "name": "Tasha Cobbs",
+            "phone": "0755688678"
         }
     }
     return render(request, "kid-details.html", context)
