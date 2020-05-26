@@ -11,97 +11,75 @@
         <div class="page-header row no-gutters py-4">
           <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
             <span class="text-uppercase page-subtitle">Overview</span>
-            <h3 class="page-title"> More information about the child </h3>
+            <h2 class="page-title"> {{ child.name }} </h2>
           </div>
         </div>
 
         <div class="row">
-            <div class="col">
-                <div class="card card-small mb-4">
-                  <div class="card-header border-bottom">
-                    <h6 class="m-0">{{ child.name }}</h6>
+            <div class="col-3"></div>
+            <div class="col-md-6">
+                <div class="card card-small mb-4 pt-3">
+                  <div class="card-header border-bottom text-center">
+                    <div class="mb-3 mx-auto">
+                      <img class="rounded-circle" src="/static/assets/img/avatars/1.jpg" alt="User Avatar" width="110"> </div>
+                    <h4 class="mb-0">
+                        {{ child.name }}
+                    </h4>
+                    <span class="text-muted d-block mb-2">
+                        {{ child.class }} Class
+                    </span>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-3">
-                      <form>
-                        <!-- Button Groups -->
-                        <strong class="text-muted d-block mb-2">Button Groups</strong>
-                        <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
-                          <label class="btn btn-white active">
-                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Fizz </label>
-                          <label class="btn btn-white">
-                            <input type="radio" name="options" id="option2" autocomplete="off"> Buzz </label>
-                          <label class="btn btn-white">
-                            <input type="radio" name="options" id="option3" autocomplete="off"> Foo </label>
-                          <label class="btn btn-white">
-                            <input type="radio" name="options" id="option4" autocomplete="off"> Bar </label>
+                    <li class="list-group-item px-4">
+                      <div class="row">
+                        <div class="col-9">
+                         <strong class="d-block"> <i class="material-icons mr-1">today</i> Date of Birth </strong>
                         </div>
-                        <!-- / Button Groups -->
-                        <!-- Input Groups -->
-                        <strong class="text-muted d-block mb-2">Input Groups</strong>
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">@</span>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"> </div>
-                        <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2" value="contact">
-                          <div class="input-group-append">
-                            <span class="input-group-text">@designrevision.com</span>
-                          </div>
+                        <div class="col-3">
+                         <strong class="d-block"> {{ child.dateOfBirth }} </strong>
                         </div>
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">$</span>
-                          </div>
-                          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="1000">
-                          <div class="input-group-append">
-                            <span class="input-group-text">.00</span>
-                          </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-4">
+                      <div class="row">
+                        <div class="col-9">
+                         <strong class="d-block"> <i class="material-icons mr-1">wc</i> Gender </strong>
                         </div>
-                        <!-- Input Groups -->
-                        <!-- Seamless Input Groups -->
-                        <strong class="text-muted d-block mb-2">Seamless Input Groups</strong>
-                        <div class="input-group mb-3">
-                          <div class="input-group input-group-seamless">
-                            <span class="input-group-prepend">
-                              <span class="input-group-text">
-                                <i class="material-icons">person</i>
-                              </span>
-                            </span>
-                            <input type="text" class="form-control" id="form1-username" placeholder="Username" value="design.revision"> </div>
+                        <div class="col-3">
+                         <strong class="d-block"> {{ child.gender }} </strong>
                         </div>
-                        <div class="input-group mb-3">
-                          <div class="input-group input-group-seamless">
-                            <input type="password" class="form-control" id="form2-password" placeholder="Password" value="mySuperSecretPa$$word">
-                            <span class="input-group-append">
-                              <span class="input-group-text">
-                                <i class="material-icons">lock</i>
-                              </span>
-                            </span>
-                          </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-4">
+                      <div class="row">
+                        <div class="col-9">
+                         <strong class="d-block"> <i class="material-icons mr-1">person</i> Parent Name </strong>
                         </div>
-                        <!-- / Seamless Input Groups -->
-                        <!-- Input/Button Group -->
-                        <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                          <div class="input-group-append">
-                            <button class="btn btn-white" type="button">Button</button>
-                          </div>
+                        <div class="col-3">
+                         <strong class="d-block"> {{ parent.name }} </strong>
                         </div>
-                        <!-- / Input/Button Group -->
-                        <!-- Input/Button Group -->
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <button class="btn btn-white" type="button">Button</button>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"> </div>
-                        <!-- / Input/Button Group -->
-                      </form>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-4">
+                      <div class="row">
+                        <div class="col-9">
+                         <strong class="d-block"> <i class="material-icons mr-1">phone</i> Parent Phone </strong>
+                        </div>
+                        <div class="col-3">
+                         <strong class="d-block"> {{ parent.phone }} </strong>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item p-4">
+                      <strong class="text-muted d-block mb-2">Allergies</strong>
+                      <span>
+                          {{ child.allergies }}
+                      </span>
                     </li>
                   </ul>
                 </div>
             </div>
+            <div class="col-3"></div>
         </div>
     </div>
 
